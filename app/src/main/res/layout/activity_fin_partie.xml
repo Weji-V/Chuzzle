@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1A1A2E">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="32dp">
+
+        <!-- Titre -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Partie terminée !"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="#E94560"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Score -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Score"
+            android:textSize="16sp"
+            android:textColor="#AAAACC"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvFinScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="42sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Nombre de coups -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coups joués"
+            android:textSize="16sp"
+            android:textColor="#AAAACC"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvFinCoups"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"/>
+
+        <!-- Graine -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Graine de la partie"
+            android:textSize="14sp"
+            android:textColor="#AAAACC"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvFinGraine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="20sp"
+            android:textColor="#E2C94E"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Objectif en cours (hard mode uniquement) -->
+        <TextView
+            android:id="@+id/tvLabelObjectif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Objectif en cours"
+            android:textSize="16sp"
+            android:textColor="#AAAACC"
+            android:gravity="center"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/tvFinObjectif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="#E2C94E"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:visibility="gone"/>
+
+        <!-- Grille finale -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dernière grille"
+            android:textSize="16sp"
+            android:textColor="#AAAACC"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"/>
+
+        <sae.chuzzle.VueGrille
+            android:id="@+id/vueGrilleFinale"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:minHeight="280dp"
+            android:clickable="false"
+            android:focusable="false"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Bouton retour au menu -->
+        <Button
+            android:id="@+id/btnFinMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Retour au menu"
+            android:textSize="18sp"
+            android:backgroundTint="#E94560"
+            android:textColor="#FFFFFF"
+            android:padding="16dp"
+            android:layout_margin="50dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

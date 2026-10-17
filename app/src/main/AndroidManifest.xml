@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="sae.chuzzle">
+
+    <application
+        android:allowBackup="true"
+        android:label="Chuzzle"
+        android:theme="@android:style/Theme.Light.NoTitleBar">
+
+        <!-- Point d'entrée : le menu principal -->
+        <activity android:name=".MenuActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- Partie avec graine : retour arrière = MenuActivity -->
+        <activity
+            android:name=".SeedActivity"
+            android:parentActivityName=".MenuActivity"/>
+
+        <!-- Options : retour arrière = MenuActivity -->
+        <activity
+            android:name=".OptionsActivity"
+            android:parentActivityName=".MenuActivity"/>
+
+        <!-- Jeu : retour arrière = MenuActivity -->
+        <activity
+            android:name=".MainActivity"
+            android:parentActivityName=".MenuActivity"/>
+
+        <!-- Fin de partie : retour arrière = MenuActivity -->
+        <activity
+            android:name=".FinPartieActivity"
+            android:parentActivityName=".MenuActivity"/>
+
+    </application>
+
+</manifest>

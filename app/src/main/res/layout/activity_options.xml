@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="32dp"
+    android:background="#1A1A2E">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Options"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#E94560"
+        android:gravity="center"
+        android:layout_marginBottom="32dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hard mode"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"/>
+
+        <CheckBox
+            android:id="@+id/checkHard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:buttonTint="#E94560"
+            android:layout_marginEnd="16dp"
+            android:minWidth="48dp"
+            android:minHeight="48dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="En mode difficile, vous devez remplir des objectifs avant la fin d'un nombre indiqué de coups. \n\ \n\2 Objectifs réussis vous rapporte une Clé 🗝️. \n\4 Coups réussis vous rapporte une Clé 🗝️.\n\ \n\Cette clé vous permet de changer votre objectif si vous êtes bloqué. Attention, vous ne pouvez en porter qu'une seule à la fois !"
+        android:textColor="#AAAACC"
+        android:textSize="14sp"
+        android:background="#16213E"
+        android:padding="16dp"
+        android:lineSpacingExtra="4dp" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Retour"
+        android:backgroundTint="#E94560"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="32dp">
+
+    </Button>
+
+</LinearLayout>

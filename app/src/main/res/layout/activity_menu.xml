@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="48dp"
+    android:background="#1A1A2E">
+
+    <ImageView
+        android:id="@+id/imgLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="224dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="64dp"
+        android:contentDescription="Logo Chuzzle"/>
+
+    <Button
+        android:id="@+id/btnNouvellePartie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nouvelle Partie"
+        android:backgroundTint="#E94560"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnPartieGraine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Partie avec Graine"
+        android:backgroundTint="#E94560"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/btnOptions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Options"
+        android:backgroundTint="#E94560"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>

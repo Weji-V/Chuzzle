@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="36dp"
+    android:background="#1A1A2E">
+
+    <TextView
+        android:id="@+id/tvScore"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Score : 0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:id="@+id/tvCoups"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Coups : 0"
+        android:textSize="18sp"
+        android:textColor="#AAAACC"/>
+
+    <!-- Section pour le Hard Mode -->
+    <TextView
+        android:id="@+id/tvObjectif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Objectif : ..."
+        android:textStyle="bold"
+        android:textColor="#E94560"
+        android:padding="8dp"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tvNbObjectifs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Objectifs réussis : 0"
+        android:paddingLeft="8dp"
+        android:textColor="#E2C94E"
+        android:visibility="gone"/>
+
+    <!-- Ligne Clés (Hard Mode) -->
+    <LinearLayout
+        android:id="@+id/layoutCles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tvCles"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="🗝️ Clés : 0 (Max 1)"
+            android:textColor="#E2C94E"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/btnReinitialisationObjectif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Réinitialiser objectif"
+            android:textSize="12sp"
+            android:backgroundTint="#E94560"
+            android:textColor="#FFFFFF"/>
+
+    </LinearLayout>
+
+    <sae.chuzzle.VueGrille
+        android:id="@+id/vueGrille"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Menu"
+        android:backgroundTint="#E94560"
+        android:textColor="#FFFFFF"
+        android:layout_margin="50dp"/>
+
+</LinearLayout>
